@@ -25,6 +25,7 @@ import com.sermepa.odin.clientes.gestorGemaOro.generated.SerClsWSEntradaService;
 import com.sermepa.odin.clientes.gestorGemaOro.generated.SerClsWSEntradaServiceLocator;
 
 import es.redsys.configuracion.util.StringToHex;
+import es.sermepa.util.SerClsUtilHexadecimal;
 
 public class GemaOroService {
 	private static final Logger log = LoggerFactory.getLogger(GemaOroService.class);

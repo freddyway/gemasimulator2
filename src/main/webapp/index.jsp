@@ -47,6 +47,7 @@
 					<li><a href="<c:url value="/activtarj?command=consultar" />">(31660).Activar Tarjeta</a></li>
  					<li><a href="<c:url value="/cargaprepag?command=consultar" />">(31240).Carga Tarjeta Prepago</a></li>
  					<li><a href="<c:url value="/estadotarj?command=consultar" />">(31042).Cambio de Estado Tarjeta</a></li>
+ 					<li><a href="tr01026.jsp">(01026).Ampliacion de Limites Tarjeta</a></li>
 <!-- 					<li><a href="tr31240.jsp">(31240).Carga Tarjeta Prepago</a></li>					 -->
 					<li><a href="tr31521.jsp">(31521).Consulta de Descuentos</a></li>
 					<li><a href="tr31522.jsp">(31522).Modificacion de Descuentos</a></li>

@@ -59,6 +59,7 @@
 					<li><a href="tr31660.jsp">(31660).ACTIVACION DESACTIVACION DE UNA TARJETA</a></li>
 					<li><a href="tr31240.jsp">(31240).Carga Tarjeta PrePago</a></li>
 					<li><a href="tr31030.jsp">(31042).Cambio Estado Tarjeta</a></li>
+					<li><a href="tr01026.jsp">(01026).Ampliacion de Limites de tarjeta</a></li>
               </ul>
           </li>
           <li>

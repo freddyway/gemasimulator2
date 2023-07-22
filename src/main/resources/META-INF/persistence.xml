@@ -9,7 +9,8 @@
 <!-- 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
 		<jta-data-source>jdbc/gema</jta-data-source>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-		<properties>			
+		<properties>
+			<property name="openjpa.Log" value="openjpa.jdbc.SQL=trace"/>			
 		</properties>
 	</persistence-unit>
 	
