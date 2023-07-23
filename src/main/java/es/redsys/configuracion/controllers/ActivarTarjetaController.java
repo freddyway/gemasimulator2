@@ -11,18 +11,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-
 //import org.apache.commons.dbcp.BasicDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import es.redsys.configuracion.services.ActivarTarjetaEstadoService;
 import es.redsys.configuracion.services.ActivarTarjetaService;
-import es.redsys.configuracion.services.AltaCuentaService;
-import es.redsys.configuracion.services.ConsultaSaldoService;
 import es.redsys.configuracion.services.GemaOroService;
+import es.redsys.configuracion.services.GemaOroTCPService;
 import es.redsys.configuracion.util.RequestParamsMapper;
 
 
@@ -33,7 +28,7 @@ import es.redsys.configuracion.util.RequestParamsMapper;
 
 public class ActivarTarjetaController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final Logger logger =  LoggerFactory.getLogger(CargaPrepagoController.class);
+	private static final Logger logger =  LoggerFactory.getLogger(ActivarTarjetaController.class);
 		
 	@EJB
 	ActivarTarjetaService service;
@@ -88,6 +83,12 @@ public class ActivarTarjetaController extends HttpServlet {
 					GemaOroService gemaOroService = new GemaOroService();
 					respuesta = gemaOroService.processRequest(mapParamRequest,"31660",version,entidad);	
 					mapParamRequest.put("codRespuesta", respuesta[8]);
+				}
+
+				if("socket".equals(command)){
+					GemaOroTCPService gemaOroTCPService = new GemaOroTCPService();
+					String codRespuesta = gemaOroTCPService.processRequest(mapParamRequest,"1660",version,entidad);	
+					mapParamRequest.put("codRespuesta", codRespuesta);
 				}
 				
 				if("grabar".equals(command)){

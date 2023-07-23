@@ -7,15 +7,6 @@ import java.util.ResourceBundle;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-
-
-
-
-
-
-
-
-
 //import org.apache.log4j.Logger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +16,6 @@ import com.sermepa.odin.clientes.gestorGemaOro.generated.SerClsWSEntradaService;
 import com.sermepa.odin.clientes.gestorGemaOro.generated.SerClsWSEntradaServiceLocator;
 
 import es.redsys.configuracion.util.StringToHex;
-import es.sermepa.util.SerClsUtilHexadecimal;
 
 public class GemaOroService {
 	private static final Logger log = LoggerFactory.getLogger(GemaOroService.class);

@@ -2,9 +2,6 @@
 <button type="submit" class="btn btn-primary btn-sm" onclick="execute('consultar')">
 	<span class="glyphicon glyphicon-search"></span> Consultar
 </button>
-<button type="submit" class="btn btn-danger btn-sm" onclick="execute('procesar')">
-	<span class="glyphicon glyphicon-cog"></span> Procesar
-</button>
 <button type="submit" class="btn btn-success btn-sm" onclick="execute('grabar')">
 	<span class="glyphicon glyphicon-save"></span> Grabar
 </button>
@@ -13,6 +10,12 @@
 </button>		
 <button type="submit" class="btn btn-default btn-sm" onclick="execute('new')">
 	<span class="glyphicon glyphicon-edit"></span> Nuevo
+</button>
+<button type="submit" class="btn btn-danger btn-md" onclick="execute('procesar')">
+	<span class="glyphicon glyphicon-cog"></span> Odin
+</button>
+<button type="submit" class="btn btn-danger btn-md" onclick="execute('socket')">
+	<span class="glyphicon glyphicon-cog"></span> Entidad
 </button>
 
 <%-- 
